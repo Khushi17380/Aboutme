@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<title>ABOUT ME</title>
+<link rel="icon" href="C:\Users\my pc\Desktop\ABOUT/Me.jpg" type="image/icon type">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+<link href="https://script.google.com/macros/library/d/1WZcvjKn3JC07oN0qMGMCcre3avn-Fw1UjL6ZpFWoJuUJsAi4j-iuPn4T/1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+.lef{
+  text-align: left;
+}
+.avatar {
+  vertical-align: middle;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+.flex {
+	display: flex;
+}
+.header-sub-title {
+  color: #fff;
+  font-family: "Courier";
+  font-size: 15px;
+  padding: 0.3em;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid red;
+  padding: 20px; 
+  width: 100%;
+  height: 50%; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.09) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+    background-color: burlywood;
+}
+
+hr.new1 {
+  border-top: 1px solid green;
+}
+hr.new2 {
+  border-top: 1px solid darkorange;
+}
+hr.new3 {
+  border-top: 1px solid darkviolet;
+}
+
+.container-skillbar {
+		width:100%;
+		padding-top:30px;
+		height:auto;
+		overflow:none;
+	}
+	.skillbar {
+		position:relative;
+		display:block;
+		margin-bottom:15px;
+		width:100%;
+		background:#efefef;
+		height:30px;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		-webkit-transition:0.4s linear;
+		-moz-transition:0.4s linear;
+		-ms-transition:0.4s linear;
+		-o-transition:0.4s linear;
+		transition:0.4s linear;
+		-webkit-transition-property:width, background-color;
+		-moz-transition-property:width, background-color;
+		-ms-transition-property:width, background-color;
+		-o-transition-property:width, background-color;
+		transition-property:width, background-color;
+	}
+
+	.skillbar-title {
+		position:absolute;
+		top:0;
+		left:0;
+		width:110px;
+		font-weight:bold;
+		font-size:13px;
+		color:#fff;
+		background:#6adcfa;
+		-webkit-border-top-left-radius:3px;
+		-webkit-border-bottom-left-radius:4px;
+		-moz-border-radius-topleft:3px;
+		-moz-border-radius-bottomleft:3px;
+		border-top-left-radius:3px;
+		border-bottom-left-radius:3px;
+	}
+
+	.skillbar-title span {
+		display:block;
+		background:rgba(0, 0, 0, 0.15);
+		padding:0 20px;
+		height:30px;
+		line-height:30px;
+		-webkit-border-top-left-radius:3px;
+		-webkit-border-bottom-left-radius:3px;
+		-moz-border-radius-topleft:3px;
+		-moz-border-radius-bottomleft:3px;
+		border-top-left-radius:3px;
+		border-bottom-left-radius:3px;
+	}
+
+	.skillbar-bar {
+		height:30px;
+		width:0px;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+	}
+
+	.skill-bar-percent {
+		position:absolute;
+		right:10px;
+		top:0;
+		font-size:11px;
+		height:30px;
+		line-height:30px;
+		color:#ffffff;
+		color:rgba(0, 0, 0, 0.5);
+	}
+
+
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.container .box:hover{
+    transform: translateY(-20px);
+}
+
+.container .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+.container .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.container .box .content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container .box .content h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container .box .content p{
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.avatar1 {
+  vertical-align: middle;
+  width: 160px;
+  height: 160px;
+  border-radius: 160%;
+}
+header{
+  z-index:9999 !important;
+}
+
+</style>
+<body class="w3-content" style="max-width:1350px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-light-grey w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="C:\Users\my pc\Desktop\ABOUT/Me.jpg" alt="Avatar" class="avatar">
+    <p style= "font-size: 20px;
+    color:purple"><b>&nbsp&nbsp&nbsp&nbspKHUSHI SAHU</b></p>
+  </div>
+  <div class="w3-padding-64 w3-medium w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#skill" class="w3-bar-item w3-button">SKILLS</a>
+    <a href="#project" class="w3-bar-item w3-button">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  
+  </div>
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <div class="w3-bar-item w3-padding-24 w3-wide">ABOUT ME</div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <!-- header class="w3-container w3-xlarge" -->
+    
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container" style="padding:0px 0px">
+    <img src="C:\Users\my pc\Desktop\ABOUT\developer.jpg" alt="dev" style="width:130%;">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 50px">
+      <h1 class="w3-jumbo w3-hide-small" style="font-family:''">Hello, My name is</h1>
+      <h1 class="w3-hide-large w3-hide-medium" style="font-family:''">Hello, My name is</h1>
+      <div>
+      <span class="w3-jumbo w3-hide-small" style="color:goldenrod;font-family:'w3-jumbo'">Khushi Sahu</span>
+      <h1 class="w3-hide-large w3-hide-medium" style="color: goldenrod;font-family:'w3-jumbo'">Khushi Sahu</h1>
+      </div>
+      <div>
+        <div class="flex">
+      <span style="font-family:'Courier New';font-size: 20px">And I'm a&nbsp</span>   
+    <span class='second' style="font-family:'Courier New';color: lightgreen;font-weight: bold;font-size: 20px" id='word'></span>
+    <span class="header-sub-title blink">|</span>
+    </div>
+      </div>
+      <p><a href="#contact" class="w3-button w3-transparent w3-padding-large w3-large w3-border">HIRE ME</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-center" style="padding: 60px;"id="about">
+    <h2 style="font-family:'w3-jumbo'"><u>ABOUT ME</u></h2>
+    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>WHO AM I?</b></h2>
+    <p id="rcorners2"><b>Hi, I'm Khushi Sahu</b>.<br> I'm pursuing B.Tech in the field of Computer Science and Engineering 
+      from Ambalika Institute Of Mangment and Technology, Lucknow.<br>
+      <b>•</b>Currently in <b>sixth semister</b><br>
+      <b>•</b>Batch <b>2018-2022</b>
+    </p>
+    <div class="w3-container w3-center" style="padding: 20px">
+    <div class="row">
+      <div class="w3-container w3-center">
+    <div class="column">
+      <div class="card">
+        <i class="material-icons" style="font-size:36px; color: green">computer</i>
+        <p>Progrmamming Profile</p>
+        <hr class="new1">
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <i class='material-icons' style='font-size:36px;color: darkorange;'>code</i>
+        <p>Web Developer</p>
+        <hr class="new2">
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <i class='material-icons' style='font-size:36px;color:darkviolet;'>developer_mode</i>
+        <p>Android app Developer</p>
+        <hr class="new3">
+      </div>
+    </div>
+  </div>
+    
+
+    <div class="w3-container w3-center" style="padding: 60px;"id="skill">
+      <h2 style="font-family:'w3-jumbo'"><u>MY SPECIALTY</u></h2>
+    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>MY SKILLS</b></h2>  
+    </div>
+    <div class="container-skillbar">
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML</span></div>
+        <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+        <div class="skill-bar-percent">80%</div>
+      </div> <!-- Ende Skill Bar -->
+    
+      <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #EBB035;"><span>CSS</span></div>
+        <div class="skillbar-bar" style="background: #EBB035;"></div>
+        <div class="skill-bar-percent">60%</div>
+      </div> <!-- Ende Skill Bar -->
+    
+      <div class="skillbar clearfix " data-percent="65%">
+        <div class="skillbar-title" style="background: #06A2CB;"><span>Dart</span></div>
+        <div class="skillbar-bar" style="background: #06A2CB;"></div>
+        <div class="skill-bar-percent">65%</div>
+      </div> <!-- Ende Skill Bar -->
+    
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title" style="background: #218559;"><span>Flutter</span></div>
+        <div class="skillbar-bar" style="background: #218559;"></div>
+        <div class="skill-bar-percent">80%</div>
+      </div> <!-- Ende Skill Bar -->
+    
+      <div class="skillbar clearfix " data-percent="55%">
+        <div class="skillbar-title" style="background: #D0C6B1;"><span>Javascript</span></div>
+        <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+        <div class="skill-bar-percent">55%</div>
+      </div> <!-- Ende Skill Bar -->
+    
+      <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #192823;"><span>Bootstrap</span></div>
+        <div class="skillbar-bar" style="background: #454545;"></div>
+        <div class="skill-bar-percent">60%</div>
+      </div> <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #588d7b;"><span>Mysql</span></div>
+        <div class="skillbar-bar" style="background: #588d7b;"></div>
+        <div class="skill-bar-percent">70%</div>
+      </div>
+      <div class="skillbar clearfix " data-percent="50%">
+        <div class="skillbar-title" style="background: #a5750d;"><span>Python</span></div>
+        <div class="skillbar-bar" style="background: #a5750d;"></div>
+        <div class="skill-bar-percent">50%</div>
+      </div>
+      <div class="skillbar clearfix " data-percent="40%">
+        <div class="skillbar-title" style="background: #6f1fd8;"><span>Java</span></div>
+        <div class="skillbar-bar" style="background: #6f1fd8;"></div>
+        <div class="skill-bar-percent">40%</div>
+      </div>
+      <div class="skillbar clearfix " data-percent="85%">
+        <div class="skillbar-title" style="background: #0e98b1;"><span>PHP</span></div>
+        <div class="skillbar-bar" style="background: #0e98b1;"></div>
+        <div class="skill-bar-percent">85%</div>
+      </div>
+      <div class="skillbar clearfix " data-percent="75%">
+        <div class="skillbar-title" style="background: #369709;"><span>C</span></div>
+        <div class="skillbar-bar" style="background: #369709;"></div>
+        <div class="skill-bar-percent">75%</div>
+      </div>
+    </div><!-- Ende container Skill Bar -->
+  
+   
+    <div class="w3-container w3-center" style="padding: 60px;"id="project">
+      <h2 style="font-family:'w3-jumbo'"><u>MY PROJECTS</u></h2>
+    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>RECENT PROJECTS</b></h2>  
+    </div>
+
+   
+    <div class="container">
+      <div class="box">
+        <span></span>
+          <div class="content">
+            <h2>Courier Management System</h2>
+            <img src="C:\Users\my pc\Desktop\ABOUT/indianxpress.png" alt="indianexpress" width="120" height="70">
+            <p>A Website which deals with all courier related informations.</p>
+          </div>    
+       </div>
+      
+          <div class="box">
+            <span></span>
+              <div class="content">
+                <h2>Fashnow</h2>
+                <img src="C:\Users\my pc\Desktop\ABOUT/logo2.png" alt="Avatar" class="avatar1">
+                <p>This is an e-commerce android app developed using Flutter</p>
+                </div>    
+             </div>
+         
+</div>
+  <!-- Footer -->
+  
+  <div class="w3-container w3-center" style="padding: 60px;"id="contact">
+    <h2 style="font-family:'w3-jumbo'"><u>GET IN TOUCH</u></h2>
+    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>CONTACT ME</b></h2>
+    </div>
+  
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-44 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-blue w3-bottombar">Get in touch</span></div>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-user w3-text-blue w3-xlarge"></i>  Khushi Sahu</p>
+      <p><i class="fa fa-envelope-o w3-text-blue w3-xlarge"></i>  khushisahu850@gmail.com</p>
+      <p><i class="fa fa-map-marker w3-text-blue w3-xlarge"></i>  Lucknow, INDIA</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" id="myform" method="POST" data-email="khushisahu850@gmail.com" action="https://script.google.com/macros/s/AKfycbzSxU5P7gwyouNLqpTlGhTUEVEp-vKmLnR4AcfBnGCb8HsOfPPG5Y_tZfsoC3Un7jHx/exec" target="_blank">
+        <div class="lef">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="name" id="name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="email" id="email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Subject</label>
+        <input class="w3-input w3-border" type="text" name="subject" id="subject" required>
+      </div>  
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="message" id="message" required>
+      </div>  
+      </div>
+      <button type="submit" class="w3-button w3-right w3-theme"><b>Send</b></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+    
+<script>
+$('#myform').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbzSxU5P7gwyouNLqpTlGhTUEVEp-vKmLnR4AcfBnGCb8HsOfPPG5Y_tZfsoC3Un7jHx/exec',
+        type: 'post',
+        data:$('#myform').serialize(),
+        success:function(){
+            // Whatever you want to do after the form is successfully submitted
+            alert("Thanks for contacting us!\n We will get back to you soon!");
+        }
+    });
+});
+
+jQuery(document).ready(function(){
+		jQuery('.skillbar').each(function(){
+			jQuery(this).find('.skillbar-bar').animate({
+				width:jQuery(this).attr('data-percent')
+			},3000);
+		});
+	});
+
+  
+const words = ["Developer.", "Freelancer."];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 300);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 200);
+	};
+	loopDeleting();
+};
+
+typingEffect();
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
