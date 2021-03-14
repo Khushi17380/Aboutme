@@ -306,6 +306,19 @@
   <br>    
 </body>
 <script>
+	$('#myform').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbzSxU5P7gwyouNLqpTlGhTUEVEp-vKmLnR4AcfBnGCb8HsOfPPG5Y_tZfsoC3Un7jHx/exec',
+        type: 'post',
+        data:$('#myform').serialize(),
+        success:function(){
+            // Whatever you want to do after the form is successfully submitted
+            alert("Thanks for contacting us!\n We will get back to you soon!");
+        }
+    });
+});
+	///////////////////////////////////////////////////////
 $(".textblind").each(function() {
 	var $el = $(this),
 		$span = $el.children("span"),
