@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1#resize-effect {
+  font-size: 20px;
+  font-weight: 100;
+  animation: resize-anime 3s forwards;
+  animation-direction: alternate;
+}
+
+h1#resize-effect span > span:nth-child(odd) {
+  color: green;
+}
+  
+@keyframes resize-anime {
+  from {
+    font-size: 20px;
+    font-weight: 100;
+    opacity:0
+  } 
+  to {
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 0px 0px 5px white;
+    opacity:1
+  }
+}
+
+/*............................Khushi Sahu......................*/
+.textblind {
+	color: goldenrod;
+	position: relative;
+	padding-left: 108px;
+	font-family: cursive;
+	font-size: 3rem;
+	line-height: 1;
+	
+}	
+
+@keyframes dropin {
+	0% {
+    	transform: translateY(-100%);
+		opacity: 1;
+	}
+	100% {
+    	transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+
+/*...........And I am a........................................*/
+h2 span::before{
+  content: '';
+  color: #aa3939;
+  animation: profile 5s infinite;
+}
+@keyframes profile {
+  0% { content: 'a Web Developer.'}
+  50% { content: 'an App Developer.'}
+  100% { content: 'a Freelancer.'}
+}
+/*............................ABOUT ME-1.........................*/
+.text {
+  position: absolute;
+ 
+  transform: translate(10%,-40%);
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 5.5vw;
+  font-weight: 200;
+  color: red;
+  padding-top: 60px;
+  text-shadow: 1px 1px 1px #df5151,
+      1px 2px 1px #f36b6b,
+      1px 3px 1px #f14141,
+      1px 4px 1px #c54b4b,
+      1px 5px 1px #802828,
+      1px 6px 1px #8f1414,
+      1px 7px 1px #802a2a,
+      1px 8px 1px #ec6161,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+/*...........................ABOUT ME-2 CONTENT....................................*/
+h1 {
+  min-width: 100%;
+  font-weight: 700;
+  font-size: 28px;
+  color: #2E294E;
+}
+
+.wordToChange {
+  background-color: #2E294E;
+  color: #FFFFFF;
+  padding: 0 8px 4px 8px;
+}
+/*.......................................SKILLS.....................................*/
+#SkillBox {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  width: 95%;
+  height: auto;
+  margin: 40px auto;
+  background-color: #fff;
+  
+  padding: 10px;
+  border-radius:20px;
+  -o-border-radius:20px;
+  -webkit-border-radius:20px;
+  -ms-border-radius:20px;
+  -moz-border-radius:20px;  
+}
+#SkillBox img {
+  width: 20%;
+  height: 10%;
+  margin: auto 35%;
+  padding: 10px;
+}
+.container-skillbar {
+  width:100%;
+  padding-top:30px;
+  height:auto;
+  overflow:none;
+}
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#efefef;
+  height:30px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#fff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.15);
+  padding:0 20px;
+  height:30px;
+  line-height:30px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:30px;
+  width:0px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:30px;
+  line-height:30px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.5);
+}
+/*..........................PROJECTS()...................................*/
+.p1 { 
+  display: flex; 
+  flex-direction: row; 
+  width: 36%;
+  padding-top: 2vw;
+}
+.p1:before, 
+        .p1:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 2px solid #000; 
+            margin: auto; 
+        } 
+
+        .p2 { 
+          display: flex; 
+          flex-direction: row; 
+          width: 35%;
+          padding-top: 2vw;
+        }
+        .p2:before, 
+                .p2:after { 
+                    content: ""; 
+                    flex: 1 1; 
+                    border-bottom: 2px solid white; 
+                    margin: auto; 
+                } 
+              
+                .p3 { 
+                  display: flex; 
+                  flex-direction: row; 
+                  width: 45%;
+                  padding-top: 2vw;
+                }
+                .p3:before, 
+                        .p3:after { 
+                            content: ""; 
+                            flex: 1 1; 
+                            border-bottom: 2px solid #000; 
+                            margin: auto; 
+                        } 
+                        .p4 { 
+                          display: flex; 
+                          flex-direction: row; 
+                          width: 42%;
+                          padding-top: 2vw;
+                        }
+                        .p4:before, 
+                                .p4:after { 
+                                    content: ""; 
+                                    flex: 1 1; 
+                                    border-bottom: 2px solid white; 
+                                    margin: auto; 
+                                }
+                                
+                                
