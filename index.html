@@ -1,399 +1,121 @@
 <!DOCTYPE html>
-<html>
-<title>ABOUT ME</title>
-<link rel="icon" href="Me.jpg" type="image/icon type">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<html lang="en">
+<head>
+  <link rel="icon" href="C:\Users\my pc\Desktop\PORTFOLIO/Me.jpg" type="image/icon type">
+  <title>About me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\my pc\Desktop\PORTFOLIO/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
-<link href="https://script.google.com/macros/library/d/1WZcvjKn3JC07oN0qMGMCcre3avn-Fw1UjL6ZpFWoJuUJsAi4j-iuPn4T/1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
-.lef{
-  text-align: left;
-}
-.avatar {
-  vertical-align: middle;
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.blink {
-  animation: blink 0.5s infinite;
-}
-@keyframes blink{
-  to { opacity: .0; }
-}
-.flex {
-	display: flex;
-}
-.header-sub-title {
-  color: #fff;
-  font-family: "Courier";
-  font-size: 15px;
-  padding: 0.3em;
-}
-#rcorners2 {
-  border-radius: 25px;
-  border: 2px solid red;
-  padding: 20px; 
-  width: 100%;
-  height: 50%; 
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Float three columns side by side */
-.column {
-  float: left;
-  width: 33%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: white;
-}
-.card:hover {
-  transform: translateY(-5px) scale(1.09) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
-    0 24px 46px var(--box-shadow-color);
-    background-color: burlywood;
-}
-
-hr.new1 {
-  border-top: 1px solid green;
-}
-hr.new2 {
-  border-top: 1px solid darkorange;
-}
-hr.new3 {
-  border-top: 1px solid darkviolet;
-}
-
-.container-skillbar {
-		width:100%;
-		padding-top:30px;
-		height:auto;
-		overflow:none;
-	}
-	.skillbar {
-		position:relative;
-		display:block;
-		margin-bottom:15px;
-		width:100%;
-		background:#efefef;
-		height:30px;
-		border-radius:3px;
-		-moz-border-radius:3px;
-		-webkit-border-radius:3px;
-		-webkit-transition:0.4s linear;
-		-moz-transition:0.4s linear;
-		-ms-transition:0.4s linear;
-		-o-transition:0.4s linear;
-		transition:0.4s linear;
-		-webkit-transition-property:width, background-color;
-		-moz-transition-property:width, background-color;
-		-ms-transition-property:width, background-color;
-		-o-transition-property:width, background-color;
-		transition-property:width, background-color;
-	}
-
-	.skillbar-title {
-		position:absolute;
-		top:0;
-		left:0;
-		width:110px;
-		font-weight:bold;
-		font-size:13px;
-		color:#fff;
-		background:#6adcfa;
-		-webkit-border-top-left-radius:3px;
-		-webkit-border-bottom-left-radius:4px;
-		-moz-border-radius-topleft:3px;
-		-moz-border-radius-bottomleft:3px;
-		border-top-left-radius:3px;
-		border-bottom-left-radius:3px;
-	}
-
-	.skillbar-title span {
-		display:block;
-		background:rgba(0, 0, 0, 0.15);
-		padding:0 20px;
-		height:30px;
-		line-height:30px;
-		-webkit-border-top-left-radius:3px;
-		-webkit-border-bottom-left-radius:3px;
-		-moz-border-radius-topleft:3px;
-		-moz-border-radius-bottomleft:3px;
-		border-top-left-radius:3px;
-		border-bottom-left-radius:3px;
-	}
-
-	.skillbar-bar {
-		height:30px;
-		width:0px;
-		border-radius:3px;
-		-moz-border-radius:3px;
-		-webkit-border-radius:3px;
-	}
-
-	.skill-bar-percent {
-		position:absolute;
-		right:10px;
-		top:0;
-		font-size:11px;
-		height:30px;
-		line-height:30px;
-		color:#ffffff;
-		color:rgba(0, 0, 0, 0.5);
-	}
-
-
-  .container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    flex-wrap: wrap;
-}
-
-.container .box{
-    position: relative;
-    width: 320px;
-    height: 400px;
-    color: #fff;
-    background: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 30px;
-    transition: 0.5s;
-}
-
-.container .box:hover{
-    transform: translateY(-20px);
-}
-
-.container .box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #ffbc00, #ff0058);
-}
-
-.container .box::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #ffbc00, #ff0058);
-    filter: blur(30px);
-}
-.container .box:nth-child(2)::before,
-.container .box:nth-child(2)::after{
-    background: linear-gradient(315deg, #03a9f4, #ff0058);
-}
-
-.container .box span{
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: rgba(0,0,0,0.6);
-    z-index: 2;
-}
-
-.container .box span::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255,255,255,0.1);
-    pointer-events: none;
-}
-
-.container .box .content{
-    position: relative;
-    z-index: 10;
-    padding: 20px 40px;
-}
-
-.container .box .content h2{
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.container .box .content p{
-    font-size: 1.1em;
-    color: #fff;
-    margin-bottom: 10px;
-    line-height: 1.4em;
-}
-
-.avatar1 {
-  vertical-align: middle;
-  width: 160px;
-  height: 160px;
-  border-radius: 160%;
-}
-header{
-  z-index:9999 !important;
-}
-
-</style>
-<body class="w3-content" style="max-width:1350px">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-light-grey w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-    
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <img src="Me.jpg" alt="Avatar" class="avatar">
-    <p style= "font-size: 20px;
-    color:purple"><b>&nbsp&nbsp&nbsp&nbspKHUSHI SAHU</b></p>
-  </div>
-  <div class="w3-padding-64 w3-medium w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#skill" class="w3-bar-item w3-button">SKILLS</a>
-    <a href="#project" class="w3-bar-item w3-button">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
-  
-  </div>
-  
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-  <div class="w3-bar-item w3-padding-24 w3-wide">ABOUT ME</div>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <!-- header class="w3-container w3-xlarge" -->
-    
-
-  <!-- Image header -->
-  <div class="w3-display-container w3-container" style="padding:0px 0px">
-    <img src="developer.jpg" alt="dev" style="width:130%;height: 160%;">
-    <div class="w3-display-topleft w3-text-white" style="padding:24px 50px">
-      <h1 class="w3-jumbo w3-hide-small" style="font-family:''">Hello, My name is</h1>
-      <h1 class="w3-hide-large w3-hide-medium" style="font-family:''">Hello, My name is</h1>
-      <div>
-      <span class="w3-jumbo w3-hide-small" style="color:goldenrod;font-family:'w3-jumbo'">Khushi Sahu</span>
-      <h1 class="w3-hide-large w3-hide-medium" style="color: goldenrod;font-family:'w3-jumbo'">Khushi Sahu</h1>
-      </div>
-      <div>
-        <div class="flex">
-      <span style="font-family:'Courier New';font-size: 20px">And I'm a&nbsp</span>   
-    <span class='second' style="font-family:'Courier New';color: lightgreen;font-weight: bold;font-size: 20px" id='word'></span>
-    <span class="header-sub-title blink">|</span>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="C:\Users\my pc\Desktop\PORTFOLIO\Me.jpg" width="30" height="25" alt="logo" class="avatar rounded-circle">
+      Skill Set
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbar-list-2">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skill">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-      </div>
-      <p><a href="#contact" class="w3-button w3-transparent w3-padding-large w3-large w3-border">HIRE ME</a></p>
-    </div>
+  </nav>
+
+<div id="home0" class="container-fluid bg-dark text-white text-center" style="padding-top:70px;padding-bottom:70px;height: 1px;">
+    <div id="wrapper">
+        <canvas id="canvas"class="container-fluid" width="1950px" height="1000px" ></canvas>
+        <canvas id="canvasbg" class="container-fluid" width="1950px" height="1000px"></canvas>
+      </div>  
+</div>
+<div id="home" class="container-fluid bg-dark" style="padding-top:30px;padding-bottom:70px;height: 550px">
+  <div class="container-fluid">
+    <h1 id="resize-effect">
+      <span aria-hidden="true">
+        <span>Welcome</span>
+        <span>to my</span>
+        <span>Portfolio</span>
+      </span>
+    </h1>
   </div>
 
-  <div class="w3-container w3-center" style="padding: 60px;"id="about">
-    <h2 style="font-family:'w3-jumbo'"><u>ABOUT ME</u></h2>
-    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>WHO AM I?</b></h2>
-    <p id="rcorners2"><b>Hi, I'm Khushi Sahu</b>.<br> I'm pursuing B.Tech in the field of Computer Science and Engineering 
-      from Ambalika Institute Of Mangment and Technology, Lucknow.<br>
-      <b>•</b>Currently in <b>sixth semister</b><br>
-      <b>•</b>Batch <b>2018-2022</b>
-    </p>
-    <div class="w3-container w3-center" style="padding: 20px">
+    <div class="container-fluid">
+      <h1 class="textblind">
+        <span style="font-size:3vw">I am Khushi Sahu</span>
+        </h1>
+    </div>
+  
+    <div class="container-fluid">
+      <div>
+        <h2 style="color: yellowgreen; padding-left: 150px;font-size:3.3vw;font-family: cursive;">And I'm <span></span></h2>
+      </div>
+      <div class="container-fluid" style="padding-left: 100px; padding-top: 50px;">
+        <a href="#contact" class="btn btn-outline-light btn-lg">HIRE ME</a>
+        </div>
+    </div>
+   
+</div>
+
+  <div id="about"class="container-fluid h-50"><br>
+    <div class="container-fluid">
+    <span class="text">About Me</span></div><br><br>
+    <div class="container-fluid pt-3">
+      <p class="p1">Who am I?</p>
+    </div>
     <div class="row">
-      <div class="w3-container w3-center">
-    <div class="column">
-      <div class="card">
-        <i class="material-icons" style="font-size:36px; color: green">computer</i>
-        <p>Progrmamming Profile</p>
-        <hr class="new1">
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <i class='material-icons' style='font-size:36px;color: darkorange;'>code</i>
-        <p>Web Developer</p>
-        <hr class="new2">
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <i class='material-icons' style='font-size:36px;color:darkviolet;'>developer_mode</i>
-        <p>Android app Developer</p>
-        <hr class="new3">
+      <div class="col-sm-6"><br><br>
+        <img src="C:\Users\my pc\Desktop\PORTFOLIO/Me.jpg" class="img-rounded img-fluid" style=" border-radius: 5%;"><br><br>
+       </div>
+      <div class="col-sm-6" style="border-radius: 10%;color:rgb(109, 94, 7);font-size: 25px;">
+        
+        <br><br><b>Hi, I'm Khushi Sahu</b>.<br>
+        
+          <h1>And I'm <span class="wordToChange js-wordToChange">a Web Developer</span>.</h1>
+       
+         I'm pursuing B.Tech in the field of Computer Science and Engineering 
+        from <u>Ambalika Institute Of Mangment and Technology, Lucknow</u>.<br>
+        <b>•</b>Currently in <b>sixth semister</b><br>
+        <b>•</b>Batch <b>2018-2022</b><br>  
       </div>
     </div>
   </div>
-    
-
-    <div class="w3-container w3-center" style="padding: 60px;"id="skill">
-      <h2 style="font-family:'w3-jumbo' sm-2"><u>MY SPECIALTY</u></h2>
-    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>MY SKILLS</b></h2>  
+  
+<div id="skill" class="container-fluid h-50" style="background-color: rgba(0, 0, 0, 0.705);">
+  <span class="text">My Skills</span><br><br><br>
+    <div class="container-fluid">
+      <p class="p2"style="color: white;">My Speciality</p>
     </div>
-    <div class="container-skillbar">
+
+    
+      <div id="SkillBox">
+          
+              <img src="https://2.bp.blogspot.com/--aPlnH6X1YA/UEf7yeJ3gGI/AAAAAAAATgw/TgMK9IVzipk/s1600/Skills%2B-%2BPawan%2BMall.png" alt="Skill" />
+        <div class="container-skillbar">
       <div class="skillbar clearfix " data-percent="80%">
         <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML</span></div>
         <div class="skillbar-bar" style="background: #DD1E2F;"></div>
@@ -413,8 +135,8 @@ header{
       </div> <!-- Ende Skill Bar -->
     
       <div class="skillbar clearfix " data-percent="80%">
-        <div class="skillbar-title" style="background: #218559;"><span>Flutter</span></div>
-        <div class="skillbar-bar" style="background: #218559;"></div>
+        <div class="skillbar-title" style="background: #41c3f7;"><span>Flutter</span></div>
+        <div class="skillbar-bar" style="background: #41c3f7;"></div>
         <div class="skill-bar-percent">80%</div>
       </div> <!-- Ende Skill Bar -->
     
@@ -425,24 +147,24 @@ header{
       </div> <!-- Ende Skill Bar -->
     
       <div class="skillbar clearfix " data-percent="60%">
-        <div class="skillbar-title" style="background: #192823;"><span>Bootstrap</span></div>
-        <div class="skillbar-bar" style="background: #454545;"></div>
+        <div class="skillbar-title" style="background: #bdc7c4;"><span>Bootstrap</span></div>
+        <div class="skillbar-bar" style="background: #bdc7c4;"></div>
         <div class="skill-bar-percent">60%</div>
       </div> <!-- Ende Skill Bar -->
       <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #588d7b;"><span>Mysql</span></div>
-        <div class="skillbar-bar" style="background: #588d7b;"></div>
+        <div class="skillbar-title" style="background: #ee8be9;"><span>Mysql</span></div>
+        <div class="skillbar-bar" style="background:#ee8be9;"></div>
         <div class="skill-bar-percent">70%</div>
       </div>
-      <div class="skillbar clearfix " data-percent="50%">
+      <div class="skillbar clearfix " data-percent="40%">
         <div class="skillbar-title" style="background: #a5750d;"><span>Python</span></div>
         <div class="skillbar-bar" style="background: #a5750d;"></div>
-        <div class="skill-bar-percent">50%</div>
+        <div class="skill-bar-percent">40%</div>
       </div>
-      <div class="skillbar clearfix " data-percent="40%">
+      <div class="skillbar clearfix " data-percent="45%">
         <div class="skillbar-title" style="background: #6f1fd8;"><span>Java</span></div>
         <div class="skillbar-bar" style="background: #6f1fd8;"></div>
-        <div class="skill-bar-percent">40%</div>
+        <div class="skill-bar-percent">45%</div>
       </div>
       <div class="skillbar clearfix " data-percent="85%">
         <div class="skillbar-title" style="background: #0e98b1;"><span>PHP</span></div>
@@ -454,54 +176,107 @@ header{
         <div class="skillbar-bar" style="background: #369709;"></div>
         <div class="skill-bar-percent">75%</div>
       </div>
+      <div class="skillbar clearfix " data-percent="25%">
+        <div class="skillbar-title" style="background: #f2f562;"><span>Firebase</span></div>
+        <div class="skillbar-bar" style="background: #f2f562;"></div>
+        <div class="skill-bar-percent">25%</div>
+      </div>
     </div><!-- Ende container Skill Bar -->
   
-   
-    <div class="w3-container w3-center" style="padding: 60px;"id="project">
-      <h2 style="font-family:'w3-jumbo'"><u>MY PROJECTS</u></h2>
-    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>RECENT PROJECTS</b></h2>  
-    </div>
-
-   
-    <div class="container">
-      <div class="box">
-        <span></span>
-          <div class="content">
-            <h2>Courier Management System</h2>
-            <img src="indianxpress.png" alt="indianexpress" width="120" height="70">
-            <p>A Website which deals with all courier related informations.</p>
-          </div>    
-       </div>
+      </div><br><br>
       
-          <div class="box">
-            <span></span>
-              <div class="content">
-                <h2>Fashnow</h2>
-                <img src="logo2.png" alt="Avatar" class="avatar1">
-                <p>This is an e-commerce android app developed using Flutter</p>
-                </div>    
-             </div>
-         
-</div>
-  <!-- Footer -->
-  
-  <div class="w3-container w3-center" style="padding: 60px;"id="contact">
-    <h2 style="font-family:'w3-jumbo'"><u>GET IN TOUCH</u></h2>
-    <h2 style="color:rgb(224, 72, 72);font-family:'Courier New'"><b>CONTACT ME</b></h2>
+  </div>
+<div id="project" class="container-fluid h-50"><br>
+  <span class="text">MY PROJECTS</span><br><br>
+    <div class="container-fluid pt-3">
+      <p class="p3">Recent Projects</p>
     </div>
-  
+ <div class="row">
+   <div class="col-sm-6">
+     <!-- Card -->
+     
+<div class="card ovf-hidden">
+   <!--MDB Hover Effects-->
+   <div class="container mt-4">
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-44 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
+
+  <!-- Card image -->
+  <div class="view overlay">
+    <img class="card-img-top" src="C:\Users\my pc\Desktop\PORTFOLIO/logo2.png" alt="fashnow" height="300px" style="background-color: rgb(250, 237, 248);">
+    <a>
+      <div class="mask waves-effect waves-light rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    
+    <!-- Title -->
+    <h4 class="card-title">Fashnow</h4>
+    <hr>
+    <!-- Text -->
+    <p class="card-text">This is an e-commerce android app developed using Flutter.</p>
+   
+  </div>
+
+  </div>
+</div>
+<!-- Card -->
+   </div>
+   <div class="col-sm-6">
+     <!-- Card -->
+<div class="card ovf-hidden">
+   <!--MDB Hover Effects-->
+   <div class="container mt-4">
+
+
+  <!-- Card image -->
+  <div class="view overlay">
+    <img class="card-img-top" src="C:\Users\my pc\Desktop\PORTFOLIO/indianxpress.png" alt="indianxpress">
+    <a>
+      <div class="mask waves-effect waves-light rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    
+    <!-- Title -->
+    <h4 class="card-title">Indian X-Press Service</h4>
+    <hr>
+    <!-- Text -->
+    <p class="card-text">A Website which deals with all courier related informations.</p>
+   
+  </div>
+
+  </div>
+</div>
+<!-- Card -->
+   </div>
+ </div>
+  </div><br>
+
+
+  <div id="contact" class="container-fluid h-50" style="background-color: rgba(0, 0, 0, 0.705);">
+    <span class="text">Conact Me</span><br><br><br>
+      <div class="container-fluid">
+        <p class="p4"style="color: white;">Get In Touch</p>
+      </div>
+
+<div id="SkillBox">
+  <!-- Contact Container -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-blue w3-bottombar">Get in touch</span></div>
       <p>Swing by for a cup of coffee, or whatever.</p>
       <p><i class="fa fa-user w3-text-blue w3-xlarge"></i>  Khushi Sahu</p>
       <p><i class="fa fa-envelope-o w3-text-blue w3-xlarge"></i>  khushisahu850@gmail.com</p>
       <p><i class="fa fa-map-marker w3-text-blue w3-xlarge"></i>  Lucknow, INDIA</p>
     </div>
-    <div class="w3-col m7">
+    <div class="col-sm-6">
       <form class="w3-container w3-card-4 w3-padding-16 w3-white" id="myform" method="POST" data-email="khushisahu850@gmail.com" action="https://script.google.com/macros/s/AKfycbzSxU5P7gwyouNLqpTlGhTUEVEp-vKmLnR4AcfBnGCb8HsOfPPG5Y_tZfsoC3Un7jHx/exec" target="_blank">
         <div class="lef">
       <div class="w3-section">      
@@ -527,21 +302,18 @@ header{
   </div>
 </div>
 
-    
+</div>
+  <br>    
+</body>
 <script>
-$('#myform').submit(function(e){
-    e.preventDefault();
-    $.ajax({
-        url: 'https://script.google.com/macros/s/AKfycbzSxU5P7gwyouNLqpTlGhTUEVEp-vKmLnR4AcfBnGCb8HsOfPPG5Y_tZfsoC3Un7jHx/exec',
-        type: 'post',
-        data:$('#myform').serialize(),
-        success:function(){
-            // Whatever you want to do after the form is successfully submitted
-            alert("Thanks for contacting us!\n We will get back to you soon!");
-        }
-    });
+$(".textblind").each(function() {
+	var $el = $(this),
+		$span = $el.children("span"),
+		className = "blind";
+	
+	$span.wrap("<span class='" + className + "'></span>");
 });
-
+////////////////////////////////////////SKILLS????//////////////////////////////////////////////
 jQuery(document).ready(function(){
 		jQuery('.skillbar').each(function(){
 			jQuery(this).find('.skillbar-bar').animate({
@@ -550,63 +322,229 @@ jQuery(document).ready(function(){
 		});
 	});
 
-  
-const words = ["Developer.", "Freelancer."];
-let i = 0;
-let timer;
+//////////////////////////////////////////////////////AND I AM A>>>??????????????///////////////////////
+const wordToChange = document.querySelector('.js-wordToChange')
 
-function typingEffect() {
-	let word = words[i].split("");
-	var loopTyping = function() {
-		if (word.length > 0) {
-			document.getElementById('word').innerHTML += word.shift();
-		} else {
-			deletingEffect();
-			return false;
-		};
-		timer = setTimeout(loopTyping, 300);
-	};
-	loopTyping();
-};
+let interval = 0
+initInterval()
 
-function deletingEffect() {
-	let word = words[i].split("");
-	var loopDeleting = function() {
-		if (word.length > 0) {
-			word.pop();
-			document.getElementById('word').innerHTML = word.join("");
-		} else {
-			if (words.length > (i + 1)) {
-				i++;
-			} else {
-				i = 0;
-			};
-			typingEffect();
-			return false;
-		};
-		timer = setTimeout(loopDeleting, 200);
-	};
-	loopDeleting();
-};
-
-typingEffect();
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+function initInterval () {
+  interval = setInterval(changeSentence, 3500)
 }
 
+function changeSentence () {
+  const words = ['a Web Developer', 'an App Developer', 'a Freelancer']
+  const randomWord = words[Math.floor(Math.random() * words.length)]
+  clearInterval(interval)
+  eraseAndSet(wordToChange, randomWord)
+}
+
+function eraseAndSet (element, newValue) {
+  erase()
+
+  function erase () {
+    const stringLength = element.innerHTML.length
+    element.innerHTML = element.innerHTML.substr(0, stringLength - 1)
+
+    stringLength > 0 ? setTimeout(erase, 50) : set()
+  }
+
+  function set () {
+    const stringLength = element.innerHTML.length;
+    element.innerHTML = newValue.substr(0, stringLength + 1)
+
+    stringLength < newValue.length ? setTimeout(set, 50) : initInterval()
+  }
+}
+
+
+  //////////////////////////////////////////////////////BACKGROUND ANIMATION//////////////////////////////////
+    // min and max radius, radius threshold and percentage of filled circles
+var radMin = 5,
+  radMax = 125,
+  filledCircle = 60, //percentage of filled circles
+  concentricCircle = 30, //percentage of concentric circles
+  radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
+
+//min and max speed to move
+var speedMin = 0.3,
+  speedMax = 2.5;
+
+//max reachable opacity for every circle and blur effect
+var maxOpacity = 0.6;
+
+//default palette choice
+var colors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120'],
+  bgColors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120'],
+  circleBorder = 10,
+  backgroundLine = bgColors[0];
+var backgroundMlt = 0.85;
+
+//min distance for links
+var linkDist = Math.min(canvas.width, canvas.height) / 2.4,
+  lineBorder = 2.5;
+
+//most importantly: number of overall circles and arrays containing them
+var maxCircles = 20,
+  points = [],
+  pointsBack = [];
+
+//populating the screen
+for (var i = 0; i < maxCircles * 2; i++) points.push(new Circle());
+for (var i = 0; i < maxCircles; i++) pointsBack.push(new Circle(true));
+
+//experimental vars
+var circleExp = 1,
+  circleExpMax = 1.003,
+  circleExpMin = 0.997,
+  circleExpSp = 0.00004,
+  circlePulse = false;
+
+//circle class
+function Circle(background) {
+  //if background, it has different rules
+  this.background = (background || false);
+  this.x = randRange(-canvas.width / 2, canvas.width / 2);
+  this.y = randRange(-canvas.height / 2, canvas.height / 2);
+  this.radius = background ? hyperRange(radMin, radMax) * backgroundMlt : hyperRange(radMin, radMax);
+  this.filled = this.radius < radThreshold ? (randint(0, 100) > filledCircle ? false : 'full') : (randint(0, 100) > concentricCircle ? false : 'concentric');
+  this.color = background ? bgColors[randint(0, bgColors.length - 1)] : colors[randint(0, colors.length - 1)];
+  this.borderColor = background ? bgColors[randint(0, bgColors.length - 1)] : colors[randint(0, colors.length - 1)];
+  this.opacity = 0.05;
+  this.speed = (background ? randRange(speedMin, speedMax) / backgroundMlt : randRange(speedMin, speedMax)); // * (radMin / this.radius);
+  this.speedAngle = Math.random() * 2 * Math.PI;
+  this.speedx = Math.cos(this.speedAngle) * this.speed;
+  this.speedy = Math.sin(this.speedAngle) * this.speed;
+  var spacex = Math.abs((this.x - (this.speedx < 0 ? -1 : 1) * (canvas.width / 2 + this.radius)) / this.speedx),
+    spacey = Math.abs((this.y - (this.speedy < 0 ? -1 : 1) * (canvas.height / 2 + this.radius)) / this.speedy);
+  this.ttl = Math.min(spacex, spacey);
+};
+
+Circle.prototype.init = function() {
+  Circle.call(this, this.background);
+}
+
+//support functions
+//generate random int a<=x<=b
+function randint(a, b) {
+    return Math.floor(Math.random() * (b - a + 1) + a);
+  }
+  //generate random float
+function randRange(a, b) {
+    return Math.random() * (b - a) + a;
+  }
+  //generate random float more likely to be close to a
+function hyperRange(a, b) {
+  return Math.random() * Math.random() * Math.random() * (b - a) + a;
+}
+
+//rendering function
+function drawCircle(ctx, circle) {
+  //circle.radius *= circleExp;
+  var radius = circle.background ? circle.radius *= circleExp : circle.radius /= circleExp;
+  ctx.beginPath();
+  ctx.arc(circle.x, circle.y, radius * circleExp, 0, 2 * Math.PI, false);
+  ctx.lineWidth = Math.max(1, circleBorder * (radMin - circle.radius) / (radMin - radMax));
+  ctx.strokeStyle = ['rgba(', circle.borderColor, ',', circle.opacity, ')'].join('');
+  if (circle.filled == 'full') {
+    ctx.fillStyle = ['rgba(', circle.borderColor, ',', circle.background ? circle.opacity * 0.8 : circle.opacity, ')'].join('');
+    ctx.fill();
+    ctx.lineWidth=0;
+    ctx.strokeStyle = ['rgba(', circle.borderColor, ',', 0, ')'].join('');
+  }
+  ctx.stroke();
+  if (circle.filled == 'concentric') {
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, radius / 2, 0, 2 * Math.PI, false);
+    ctx.lineWidth = Math.max(1, circleBorder * (radMin - circle.radius) / (radMin - radMax));
+    ctx.strokeStyle = ['rgba(', circle.color, ',', circle.opacity, ')'].join('');
+    ctx.stroke();
+  }
+  circle.x += circle.speedx;
+  circle.y += circle.speedy;
+  if (circle.opacity < (circle.background ? maxOpacity : 1)) circle.opacity += 0.01;
+  circle.ttl--;
+}
+
+//initializing function
+function init() {
+  window.requestAnimationFrame(draw);
+}
+
+//rendering function
+function draw() {
+
+  if (circlePulse) {
+    if (circleExp < circleExpMin || circleExp > circleExpMax) circleExpSp *= -1;
+    circleExp += circleExpSp;
+  }
+  var ctxfr = document.getElementById('canvas').getContext('2d');
+  var ctxbg = document.getElementById('canvasbg').getContext('2d');
+
+  ctxfr.globalCompositeOperation = 'destination-over';
+  ctxfr.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
+  ctxbg.globalCompositeOperation = 'destination-over';
+  ctxbg.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
+
+  ctxfr.save();
+  ctxfr.translate(canvas.width / 2, canvas.height / 2);
+  ctxbg.save();
+  ctxbg.translate(canvas.width / 2, canvas.height / 2);
+
+  //function to render each single circle, its connections and to manage its out of boundaries replacement
+  function renderPoints(ctx, arr) {
+    for (var i = 0; i < arr.length; i++) {
+      var circle = arr[i];
+      //checking if out of boundaries
+      if (circle.ttl<0) {}
+      var xEscape = canvas.width / 2 + circle.radius,
+        yEscape = canvas.height / 2 + circle.radius;
+      if (circle.ttl < -20) arr[i].init(arr[i].background);
+      //if (Math.abs(circle.y) > yEscape || Math.abs(circle.x) > xEscape) arr[i].init(arr[i].background);
+      drawCircle(ctx, circle);
+    }
+    for (var i = 0; i < arr.length - 1; i++) {
+      for (var j = i + 1; j < arr.length; j++) {
+        var deltax = arr[i].x - arr[j].x;
+        var deltay = arr[i].y - arr[j].y;
+        var dist = Math.pow(Math.pow(deltax, 2) + Math.pow(deltay, 2), 0.5);
+        //if the circles are overlapping, no laser connecting them
+        if (dist <= arr[i].radius + arr[j].radius) continue;
+        //otherwise we connect them only if the dist is < linkDist
+        if (dist < linkDist) {
+          var xi = (arr[i].x < arr[j].x ? 1 : -1) * Math.abs(arr[i].radius * deltax / dist);
+          var yi = (arr[i].y < arr[j].y ? 1 : -1) * Math.abs(arr[i].radius * deltay / dist);
+          var xj = (arr[i].x < arr[j].x ? -1 : 1) * Math.abs(arr[j].radius * deltax / dist);
+          var yj = (arr[i].y < arr[j].y ? -1 : 1) * Math.abs(arr[j].radius * deltay / dist);
+          ctx.beginPath();
+          ctx.moveTo(arr[i].x + xi, arr[i].y + yi);
+          ctx.lineTo(arr[j].x + xj, arr[j].y + yj);
+          var samecolor = arr[i].color == arr[j].color;
+          ctx.strokeStyle = ["rgba(", arr[i].borderColor, ",", Math.min(arr[i].opacity, arr[j].opacity) * ((linkDist - dist) / linkDist), ")"].join("");
+          ctx.lineWidth = (arr[i].background ? lineBorder * backgroundMlt : lineBorder) * ((linkDist - dist) / linkDist); //*((linkDist-dist)/linkDist);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  var startTime = Date.now();
+  renderPoints(ctxfr, points);
+  renderPoints(ctxbg, pointsBack);
+  deltaT = Date.now() - startTime;
+
+  ctxfr.restore();
+  ctxbg.restore();
+
+  window.requestAnimationFrame(draw);
+}
+
+init();
+
+/*Credits and aknowledgements:
+Original Idea and Design by Luca Luzzatti
+
+Optimizing tips from Benjamin Kästner
+General tips from Salvatore Previti*/
 </script>
-
-</body>
 </html>
