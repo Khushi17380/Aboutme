@@ -69,7 +69,7 @@ h2 span::before{
   transform: translate(10%,-40%);
   text-transform: uppercase;
   font-family: verdana;
-  font-size: 6.2vw;
+  font-size: 6vw;
   font-weight: 250;
   color: red;
   padding-top: 60px;
