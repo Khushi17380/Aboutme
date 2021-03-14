@@ -54,7 +54,7 @@ h1#resize-effect span > span:nth-child(odd) {
 /*...........And I am a........................................*/
 h2 span::before{
   content: '';
-  color: #aa3939;
+  color: red;
   animation: profile 5s infinite;
 }
 @keyframes profile {
